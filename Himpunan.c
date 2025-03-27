@@ -86,6 +86,13 @@ void deleteOrang(int i, char nama[]){
 		return;	
 	}
 	
+	if(strcmp(info(orang(kota[i-1])), nama) == 0){
+		address temp = orang(kota[i-1]);
+		orang(kota[i-1]) = next(temp);
+		free(temp);
+		printf("Nama %s berhasil dihapus dari kota %s\n", nama, nama(kota[i-1]));
+		return;
+	}
 	address temp = orang(kota[i-1]);
 	address prev = temp;
 	while(strcmp(info(temp), nama) != 0){
