@@ -4,10 +4,11 @@ int main(int argc, char *argv[]) {
 	char nama[10];
 	int i = 0, pilihan;
 	initKota();
-	tambahKota("anjay"); tambahOrang(1, "Ivan"); tambahOrang(1, "Zaidan");
+	tambahKota("Cimahi"); tambahOrang(1, "Ivan"); tambahOrang(1, "Zaidan");
 	tambahKota("Bandung"); tambahOrang(2, "Rangga"); 
 	tambahKota("Jakarta"); tambahOrang(3, "David");
 	tambahKota("Bogor"); tambahOrang(4, "Thoriq");
+	tambahKota("Semarang"); tambahOrang(5, "Joko");
 	system("cls");
 	
 	do{
